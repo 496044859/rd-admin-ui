@@ -1,0 +1,35 @@
+.el-form-item__content {
+  .el-date-editor.el-input, .el-date-editor.el-input__inner, .el-input-number--medium, .el-cascader, .el-select {
+    width: 100%;
+  }
+}
+.ces-checkbox-group .el-checkbox {
+  margin-right: 30px;
+}
+.ces-checkbox-group .el-checkbox+.el-checkbox {
+  margin-left: 0;
+}
+.el-button+.el-dropdown {
+  margin-left: 10px;
+}
+.el-card__header {
+  padding: 8px 16px;
+}
+.el-menu-item:hover {
+  background: $menuHover!important;
+}
+.el-submenu__title:hover {
+  background: $menuHover!important;
+}
+.el-table .warning-row {
+  color: red;
+}
+.el-loading-mask {
+  z-index: 1000;
+}
+.el-table .read {
+  color: #ccc;
+}
+.el-table .unRead {
+  color: #0187de;
+}

@@ -1,0 +1,51 @@
+#app {
+   // 侧边栏
+  .app-sidebar {
+    transition: width 0.28s;
+    width: 180px!important;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    background: $menuBg;
+    box-shadow: 2px 0 6px rgba(0,21,41,0.35);
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+    .svg-icon {
+      margin-right: 16px;
+    }
+    .el-menu {
+      border: none;
+      width: 100%;
+    }
+    .is-opened>.el-submenu__title {
+      color: #f4f4f5!important;
+    }
+    .is-opened>.el-submenu__title i {
+      color: #f4f4f5!important;
+    }
+    .scrollbar-wrapper {
+      overflow-x: hidden;
+    }
+  }
+  .hideSidebar {
+    .app-sidebar,.app-sidebar .el-menu {
+      width: 64px!important;
+      // overflow: inherit;
+    }
+    .app-main {
+      margin-left: 64px !important;
+    }
+  }
+  .nest-menu .el-submenu>.el-submenu__title,
+  .el-submenu .el-menu-item {
+    min-width: 180px!important;
+    background-color: $subMenuBg!important;
+    &:hover {
+      background-color: $menuHover!important;
+    }
+  }
+}
